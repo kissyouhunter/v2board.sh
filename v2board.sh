@@ -73,7 +73,7 @@ check_format() {
 check_v2board_directory() {
     V2BOARD_DIR="/usr/local/etc/v2board.sh"
     V2BOARD_SCRIPT="/usr/bin/v2board.sh"
-    REPO_URL="https://github.com/9d84/v2board.sh"
+    REPO_URL="https://github.com/kissyouhunter/v2board.sh"
 
     if [[ ! -d "$V2BOARD_DIR" ]]; then
         echo_content yellow "v2board.sh 目录不存在，正在进行安装..."
@@ -197,7 +197,7 @@ update_v2board() {
 #更新脚本
 update_script() {
     echo_content sky_blue "正在更新脚本..."
-    wget -O "$V2BOARD_DIR/v2board.sh" "https://raw.githubusercontent.com/9d84/v2board.sh/master/v2board.sh"
+    wget -O "$V2BOARD_DIR/v2board.sh" "https://raw.githubusercontent.com/kissyouhunter/v2board.sh/master/v2board.sh"
     chmod +x "$V2BOARD_SCRIPT"
     echo_content green "脚本更新完成！"
 }
