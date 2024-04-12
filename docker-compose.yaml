@@ -10,8 +10,8 @@ services:
       - './crontabs.conf:/etc/crontabs/root'
       - './.caddy:/root/.caddy'
     ports:
-      - '80:80'
-      - '443:443'
+      - '1880:80'
+      #- '443:443'
     restart: always
     environment:
       - mysql_database=${MYSQL_DATABASE}
